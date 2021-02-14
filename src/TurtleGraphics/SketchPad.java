@@ -1,7 +1,7 @@
 package TurtleGraphics;
 
 public class SketchPad {
-    private int floor[][];
+    private int[][] floor;
 
     public SketchPad(){
         floor = new int[20][20];

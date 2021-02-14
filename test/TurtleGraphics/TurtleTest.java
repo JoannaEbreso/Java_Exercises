@@ -32,14 +32,14 @@ class TurtleTest {
 
     @Test
     void testThatTurtlePenPositionCanBeSetToDown(){
-        turtle.getPen().setPosition(PenPosition.down);
+        turtle.penDown();
 
         assertEquals(PenPosition.down, turtle.getPen().getPosition());
     }
 
     @Test
     void testThatTurtlePenPositionCanBeSetToUp(){
-        turtle.getPen().setPosition(PenPosition.up);
+        turtle.penUp();
 
         assertEquals(PenPosition.up, turtle.getPen().getPosition());
     }
@@ -57,4 +57,6 @@ class TurtleTest {
 
         assertEquals(Direction.left, turtle.getDirection());
     }
+
+
 }

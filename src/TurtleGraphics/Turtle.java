@@ -38,6 +38,20 @@ public class Turtle {
         this.direction = direction;
     }
 
+    public void penUp(){
+        pen.setPosition(PenPosition.up);
+    }
+
+    public void penDown(){
+        pen.setPosition(PenPosition.down);
+    }
+
+    public String moveForward(int numberOfSteps){
+        return null;
+    }
+
+
+
 //    public void TurnRight(){
 //
 //    }
