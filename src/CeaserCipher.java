@@ -10,20 +10,18 @@ public class CeaserCipher {
         String decodedWord = "";
 
         for (char character: charactersInCodedWord) {
-            int positionOfCharacter;
-            int temporaryIndexOfDecodedCharacter;
+            int runningIndexOfDecodedCharacter;
             int actualIndexOfDecodedCharacter;
             String decodedCharacter;
 
-            positionOfCharacter = alphabets.indexOf(character);
-            temporaryIndexOfDecodedCharacter = positionOfCharacter - runningNumber;
-            if(temporaryIndexOfDecodedCharacter < 0){
-                actualIndexOfDecodedCharacter = alphabets.size() + temporaryIndexOfDecodedCharacter;
+            runningIndexOfDecodedCharacter = alphabets.indexOf(character) - runningNumber;
+            if(runningIndexOfDecodedCharacter < 0){
+                actualIndexOfDecodedCharacter = alphabets.size() + runningIndexOfDecodedCharacter;
                 decodedCharacter = alphabets.get(actualIndexOfDecodedCharacter).toString();
                 decodedWord += decodedCharacter;
             }
             else{
-                actualIndexOfDecodedCharacter = temporaryIndexOfDecodedCharacter;
+                actualIndexOfDecodedCharacter = runningIndexOfDecodedCharacter;
                 decodedCharacter = alphabets.get(actualIndexOfDecodedCharacter).toString();
                 decodedWord += decodedCharacter;
             }
