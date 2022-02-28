@@ -46,10 +46,9 @@ public class Turtle {
         pen.setPosition(PenPosition.down);
     }
 
-    public String moveForward(int numberOfSteps){
+    public String move(int numberOfSteps){
         return null;
     }
-
 
 
 //    public void TurnRight(){

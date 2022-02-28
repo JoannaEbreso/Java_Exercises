@@ -31,7 +31,7 @@ public class TurtleGraphicsTest {
                 case 5:
                     System.out.println("Enter number of steps: ");
                     int numberOfSteps = sc.nextInt();
-                    newTurtle.moveForward(numberOfSteps);
+//                    newTurtle.moveForward(numberOfSteps);
                     break;
 
                 default:
