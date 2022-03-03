@@ -1,7 +1,5 @@
 package DateClass;
 
-import java.util.Arrays;
-
 public class DateClass {
 
     private int[] date = new int[3];
@@ -21,36 +19,14 @@ public class DateClass {
         setYear(year);
     }
 
-
-
-
-    private int year;
-
-    private String month;
-
-    private int day;
-
-
-    public int getYear() {
-        return year;
-    }
-
     public void setYear(int year) throws Exception {
         confirmYear(year);
         date[2] = year;
     }
 
-    public String getMonth() {
-        return month;
-    }
-
     public void setMonth(int month) throws Exception {
         confirmMonth(month);
         date[1] = month;
-    }
-
-    public int getDay() {
-        return day;
     }
 
     public void setDay(int day) throws Exception {
